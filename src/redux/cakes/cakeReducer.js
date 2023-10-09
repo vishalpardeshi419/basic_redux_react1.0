@@ -3,7 +3,8 @@ import { BUY_CAKE } from "./cakeTypes"
 const initiaState = {
     numberOfCakes: 10
 }
-const reducer = (state = initiaState, action) => {
+
+const cakeReducer = (state = initiaState, action) => {
     switch(action.type) {
         case BUY_CAKE: return {
             ...state,            
@@ -13,4 +14,4 @@ const reducer = (state = initiaState, action) => {
     }
 }
 
-export default reducer
+export default cakeReducer
